@@ -16,3 +16,8 @@
 ## Categories
 ### Java
 - [Day01](https://github.com/JaeHyun-Ban/TIL/blob/master/Java/Day01.md)
+
+
+## Storage(기타 저장소)
+### [ProgramingWord](https://github.com/JaeHyun-Ban/TIL/tree/master/Storage/ProgramingWord)
+- 학습중 이해가 안되는 용어들을 정리
