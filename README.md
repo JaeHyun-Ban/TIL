@@ -10,6 +10,9 @@
 - 배운내용에 추가로 알게된 점이 있다면 업데이트를 진행할 것이다
 - 검색을통해 알게된것은 외부링크를 첨부해서 작성한다
 - 작성한 것은 README에 링크를 생성해 알파벳 순서대로 정렬한다.
+- 모든 문서는 마크다운(Markdown, .md)로 작성한다
 
 
 ## Categories
+### Java
+- [Day01](https://github.com/JaeHyun-Ban/TIL/blob/master/Java/Day01.md)
