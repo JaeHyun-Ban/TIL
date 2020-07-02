@@ -16,6 +16,7 @@
 ## Categories
 ### Java
 - [Day01](https://github.com/JaeHyun-Ban/TIL/blob/master/Java/Day01.md)
+- [Day02](https://github.com/JaeHyun-Ban/TIL/blob/master/Java/Day02.md)
 
 
 ## Storage(기타 저장소)
