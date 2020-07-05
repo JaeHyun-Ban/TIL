@@ -18,8 +18,9 @@
 - [Day01](https://github.com/JaeHyun-Ban/TIL/blob/master/Java/Day01.md)
 - [Day02](https://github.com/JaeHyun-Ban/TIL/blob/master/Java/Day02.md)
 - [Day03](https://github.com/JaeHyun-Ban/TIL/blob/master/Java/Day03.md)
+- [Day04](https://github.com/JaeHyun-Ban/TIL/blob/master/Java/Day04.md)
 
 
 ## Storage(기타 저장소)
 ### [ProgramingWord](https://github.com/JaeHyun-Ban/TIL/tree/master/Storage/ProgramingWord)
-- 학습중 이해가 안되는 용어들을 정리
+- 학습중 모르겟는 용어들을 정리
