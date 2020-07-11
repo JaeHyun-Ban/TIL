@@ -8,9 +8,11 @@
 - 배열 생성: <배열이름> = new <데이터 타입[배열의 크기]>
 ```
 배열의 생성 
-public static void main(String[] args) {
-		
-		String[] names = new String[10];
+int[] arr = {1,3,5,7,9,11,13}; //int배열에 1,3,5,7,9,11,13을 넣어 생성
+
+
+
+String[] names = new String[10]; // String배열, 크기는 10
 ```
 - 자바의 배열은 선언시에 크기를 명시할 수 없으며, **생성시에 크기를 명시한다.**
 - 배열은 기본데이터 타입이나 객체참조 데이터 타입 또는   
