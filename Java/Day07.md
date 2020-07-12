@@ -10,8 +10,6 @@
 배열의 생성 
 int[] arr = {1,3,5,7,9,11,13}; //int배열에 1,3,5,7,9,11,13을 넣어 생성
 
-
-
 String[] names = new String[10]; // String배열, 크기는 10
 ```
 - 자바의 배열은 선언시에 크기를 명시할 수 없으며, **생성시에 크기를 명시한다.**
@@ -33,4 +31,29 @@ String[] names = new String[10]; // String배열, 크기는 10
 for(배열의 값을 담을 변수 : 배열의 이름) {
       실행문;
 }
+----------------------------------------------
+Scanner sc = new Scanner(System.in); //스캐너 생성
+String[] food = new String[100]; // food배열을 생성
+		
+System.out.println("먹고 싶은 음식을 입력하시오: ");
+System.out.println("입력을 중지하려면 '배불러' 를 입력하시오");
+for(int i = 0; i < food.length; i++) { // 0번부터 food.length(배열의 크기 100) 까지 음식을 입력받음
+	System.out.print("> ");
+	String name = sc.next();
+	
+	if(name.equals("배불러")) {
+		System.out.println("입력을 중지 합니다.");
+		break;
+	}
+	food[i] = name;
+}
+
+System.out.println("======================================");
+
+System.out.println("먹고싶은 음식");
+for(String str : food) { //String으로 food배열에 담긴 음식들을 하나씩 출력한다
+	if(str == null) break; //출력을 하다 다음이 비어있다면 빠져나간다
+	System.out.println(str + " ");
+}
+
 ```
