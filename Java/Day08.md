@@ -17,6 +17,83 @@ System.out.println(Arrays.deepToString(arr3by3));
 //> 다차원 배열에서 Arrays.deepToString(arr3by3)을 통해 내부의 모든 값을 문자열 형태로 출력 가능하다.
 
 System.out.println(arr3by3[1][2]);//1번 인덱스 안의 2번 인덱스를 출력
-
-
 ```
+## 메서드(Method)
+- 메서드는 **반복되는 코드 블록**에 이름을 붙여 놓은 것 입니다.
+- 메서드는 반복되는 코드를 줄여주고,   
+좀 더 구조화시켜서 우리가 코드를 알아보기 쉽게 해준다.(코드의 모듈화)
+- 메서드는 **선언하는 과정과 호출하는 과정으로 나누어진다.**
+- 메서드 선언은 메서드 내부에서는 불가능 합니다.    
+새로운 메서드의 선언은 반드시 메서드 블록 외부 and 클래스 블록 내부에서만 가능하다.
+- 메서드 호출은 메서드 생성자 블록 내부에서만 가능하다.
+```
+public class MethodExample1 {
+
+	//메서드의 선언.
+	static int calcTotal(int x) {//(int x)정수값을 받아서 내부로 전달해준다(매개변수)
+		int total = 0;
+		for(int i = 0; i <= x; i++) {
+			total += i;
+		}
+		return total;
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		
+    //메서드 호출
+		int result = calcTotal(10);
+		System.out.println("int result에 대입: "+ result);
+		System.out.println("calcTotal을 바로 출력: " + calcTotal(10));
+		System.out.println("1~100까지의 누적합: " + calcTotal(100));
+		System.out.println("1~200까지의 누적합: " + calcTotal(200));
+		System.out.println("1~300까지의 누적합: " + calcTotal(300));
+		System.out.println("1~400까지의 누적합: " + calcTotal(400));
+		System.out.println("1~500까지의 누적합: " + calcTotal(500));
+  } 
+}
+```
+
+## 매개 변수(Parameter, argument)
+- 매개변수는 **메서드를 호출 할 때, 메서드 실행에 필요한 값들을**    
+**메서드 내부로 전달하는 매개체 역활을 한다.**
+- 메서드 호출부에서 어떤 매개값을 전달하느냐에 따라   
+메서드의 실행 결과가 달라지게 된다.
+- 매개값을 몇 개 받아 사용할지는 메서드를 선언 할 때   
+선언부에서 ()안에 미리 갯수와 타입을 지정해놓는다.
+- 매개변수를 하나도 선언하지 않을 수 있다.   
+  - 이 때는 메서드의 선언부의 ()내부를 비워준다   
+  그리고 호출할 때도 ()를 비워서 호출한다.
+```
+//x~y까지의 누적합을 구하는 메서드
+static int calcRangeTotal(int start, int end) { //int start, int end = 매개변수
+	int total = 0;
+	for(int i = start; i <= end; i++) {
+		total += i;
+	}
+	return total;
+}
+```
+```
+static int calcNumberTotal(int[] nums) { //배열을 통해 매개변수를 여러개 입력받을 수 있다.
+		
+		int total = 0;
+		for(int i : nums){//향상for문 사용
+			total += i;	
+		}
+		return total;
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
