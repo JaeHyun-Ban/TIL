@@ -39,10 +39,9 @@ public class MethodExample1 {
 	}
 	
 	
-	
 	public static void main(String[] args) {
 		
-    //메서드 호출
+    		//메서드 호출
 		int result = calcTotal(10);
 		System.out.println("int result에 대입: "+ result);
 		System.out.println("calcTotal을 바로 출력: " + calcTotal(10));
@@ -51,7 +50,7 @@ public class MethodExample1 {
 		System.out.println("1~300까지의 누적합: " + calcTotal(300));
 		System.out.println("1~400까지의 누적합: " + calcTotal(400));
 		System.out.println("1~500까지의 누적합: " + calcTotal(500));
-  } 
+  	} 
 }
 ```
 
@@ -79,11 +78,11 @@ static int calcRangeTotal(int start, int end) { //int start, int end = 매개변
 //매개값을 배열로 입력해 매개변수를 여러번 입력받을 수 있다.
 static int calcNumberTotal(int[] nums) { 
 		
-		int total = 0;
-		for(int i : nums){//향상for문 사용
-			total += i;	
-		}
-		return total;
+	int total = 0;
+	for(int i : nums){//향상for문 사용
+		total += i;	
+	}
+	return total;
 }
 ```
 ## 반환값, 반환 유형(return value, retyrn type)
@@ -92,7 +91,7 @@ static int calcNumberTotal(int[] nums) {
 3. return 이라는 키워드를 사용하며 return 뒤에 전달할 값을 지정한다.
 4. **전달되는 값의 데이터 타입을 반환유형이라고 하며,**		
 메서드를 선언할 때 메서드 이름 앞에 반드시 반환 유형을 명시해야 한다.
-5. 반환값이 있는 메서드는 호출문이 하나의 값으로 처리될 수 있기 때문에	
+5. 반환값이 있는 메서드는 호출문이 하나의 값으로 처리될 수 있기 때문에			
 반환값을 다른 변수에 대입할 수도 있고, 다른 메서드의 매개값으로 사용이 가능하다.
 6. 모든 메서드가 반환 유형이 있는것은 아니다.	
 **메서드 실행 후 반환할 값이 딱히 없다면 return을 사용하지 않아도 된다.**
