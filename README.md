@@ -14,14 +14,7 @@
 
 
 ## Categories
-### Java
-- [Day01](https://github.com/JaeHyun-Ban/TIL/blob/master/Java/Day01.md)
-- [Day02](https://github.com/JaeHyun-Ban/TIL/blob/master/Java/Day02.md)
-- [Day03](https://github.com/JaeHyun-Ban/TIL/blob/master/Java/Day03.md)
-- [Day04](https://github.com/JaeHyun-Ban/TIL/blob/master/Java/Day04.md)
-- [Day05](https://github.com/JaeHyun-Ban/TIL/blob/master/Java/Day05.md)
-- [Day06](https://github.com/JaeHyun-Ban/TIL/blob/master/Java/Day06.md)
-- [Day07](https://github.com/JaeHyun-Ban/TIL/blob/master/Java/Day07.md)
+### [Java](https://github.com/JaeHyun-Ban/TIL/tree/master/Java) Day01 ~ 10 진행중
 
 
 ## Storage(기타 저장소)
