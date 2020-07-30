@@ -18,7 +18,7 @@
 - [Day11](https://github.com/JaeHyun-Ban/TIL/blob/master/Java/Day11.md) - 중요!
 
 ### [POSTECH](https://github.com/JaeHyun-Ban/TIL/tree/master/POSTECH)
-- [컴퓨터공학 입문 1](https://github.com/JaeHyun-Ban/TIL/tree/master/POSTECH/CS_basic1)(
+- [컴퓨터공학 입문 1](https://github.com/JaeHyun-Ban/TIL/tree/master/POSTECH/CS_basic1)(CSBasic)
  
 ---
 
