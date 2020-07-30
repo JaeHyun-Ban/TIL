@@ -1,6 +1,6 @@
 
 
-# [컴퓨터 공학 입문 1](https://postech.smartlearn.io/)
+# [컴퓨터 공학 입문 1](https://postech.smartlearn.io/courses/course-v1:POSTECH+DSC103+P2002/about)
 ## 계획
 - 공부한 내용은 모두 마크다운으로 작성한다
 - 공부한 내용은 github의 TIL에 그대로 올린다
