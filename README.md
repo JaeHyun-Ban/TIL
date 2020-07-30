@@ -17,7 +17,7 @@
 ### [Java](https://github.com/JaeHyun-Ban/TIL/tree/master/Java) Day01 ~ 10 진행중
 - [Day11](https://github.com/JaeHyun-Ban/TIL/blob/master/Java/Day11.md) - 중요!
 
-### [POSTECH MOOC](https://postech.smartlearn.io/)
+### [POSTECH MOOC](https://postech.smartlearn.io/)(홈페이지 링크)
 - [컴퓨터공학 입문 1](https://github.com/JaeHyun-Ban/TIL/tree/master/POSTECH%20MOOC/CS_basic1)
  
 ---
