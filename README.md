@@ -12,11 +12,15 @@
 - 작성한 것은 README에 링크를 생성해 알파벳 순서대로 정렬한다.
 - 모든 문서는 마크다운(Markdown, .md)로 작성한다
 
-
+---
 ## Categories
 ### [Java](https://github.com/JaeHyun-Ban/TIL/tree/master/Java) Day01 ~ 10 진행중
 - [Day11](https://github.com/JaeHyun-Ban/TIL/blob/master/Java/Day11.md) - 중요!
 
+### [POSTECH](https://github.com/JaeHyun-Ban/TIL/tree/master/POSTECH)
+- [컴퓨터공학 입문 1](https://github.com/JaeHyun-Ban/TIL/tree/master/POSTECH/CS_basic1)(
+ 
+---
 
 ## Storage(기타 저장소)
 ### [ProgramingWord](https://github.com/JaeHyun-Ban/TIL/tree/master/Storage/ProgramingWord)
