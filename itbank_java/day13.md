@@ -30,7 +30,7 @@
 
 ---
 
-### 기능1: 다중 상속을 지원한다
+### 기능1: 다중 상속
 
 - 인터페이스는 다중 상속을 표현할 수 있다.
 - 여러 인터페이스를 동시에 구현할 수 있다.
@@ -60,38 +60,43 @@
 - 프로그램에서 실제 사용되는 방법이다.
   **인터페이스를 사용하면 각자의 나름대로 형식에 맞추어 사용방법을 정의하는게 가능하다!!**
 
-  > **사용해야하는 것**
-  > public interface Printed {
-  > public void print(String document);
-  > public void colorPrint(String document, String color);
-  > public int copy(int n);
-  > }
-  >
-  > > **LG프로그램 개발자**
-  > > public class LG implements Printed{
-  > > @Override
-  > > public void print(String document) {…}
-  > > @Override
-  > > public void colorPrint(String document, String color) {…}
-  > > @Override
-  > > public int copy(int n) {…}
-
-  > > > **삼성 프로그램 개발자**
-
-  > > > public class Samsung implements Printed{
-  > > > @Override
-  > > > public void print(String document) {…}
-  > > > @Override
-  > > > public void colorPrint(String document, String color) {…}
-  > > > @Override
-  > > > public int copy(int n) {…}
-
-`인터페이스는 한마디로 "이렇게 작성하시오~"라는 것 같다`
+```
+**사용해야하는 것**
+public interface Printed {
+    public void print(String document);
+    public void colorPrint(String document, String color);
+    public int copy(int n);
+}
+```
 
 ```
-interface간에도 상속이 가능하다
-interface간에 상속은 extends를 이용한다
+**LG프로그램 개발자**
+public class LG implements Printed {
+    @Override
+    public void print(String document) {…}
+    @Override
+    public void colorPrint(String document, String color) {…}
+    @Override
+    public int copy(int n) {…}
+}
+
+**삼성 프로그램 개발자**
+public class Samsung implements Printed {
+    @Override
+    public void print(String document) {…}
+    @Override
+    public void colorPrint(String document, String color) {…}
+    @Override
+    public int copy(int n) {…}
+}
 ```
+
+인터페이스는 한마디로 **"이렇게 작성하시오~"**라는 것 같다
+
+- interface간에도 상속이 가능하다
+- interface간에 상속은 extends를 이용한다
+
+---
 
 ### interface 정리
 
