@@ -31,19 +31,10 @@ sys ad sysdba 입력 > 비밀번호 > 로그인 성공
 
 ---
 
-국기반연습CDB
-사용자이름 sys
-비밀번호 oracle
-롤 - 최고 관리자 원한 sysDBA(관리자 + 데이터베이스)
-ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+# VSCODE
 
-국비반연습PDB
-사용자이름 sys
-비밀번호 oracle
-롤 - 최고 관리자 원한 sysDBA(관리자 + 데이터베이스)
-XEPDB1
-ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-국기반연습HR계정
-사용자이름 hr
-비밀번호 hr
-XEPDB1
+## 확장팩
+
+- Live Server 문제
+  - https://devlimk1.tistory.com/7
+  - 127.0.0.1전송한 데이터가 없습니다 를 해결
