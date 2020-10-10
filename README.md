@@ -13,14 +13,37 @@
 
 ---
 ## Categories
-### [Java](https://github.com/JaeHyun-Ban/TIL/tree/master/Java) Day01 ~ 10 진행중
-- [Day11](https://github.com/JaeHyun-Ban/TIL/blob/master/Java/Day11.md) - 중요!
 
-### [POSTECH MOOC](https://postech.smartlearn.io/)(홈페이지 링크)
-- [컴퓨터공학 입문 1](https://github.com/JaeHyun-Ban/TIL/tree/master/POSTECH%20MOOC/CS_basic1)
- 
+### C
+#### [CS50](https://github.com/JaeHyun-Ban/TIL/tree/master/CS50(2019))
+
+### D
+
+#### [DB&SQL](https://github.com/JaeHyun-Ban/TIL/tree/master/DBSQL)
+
+### H
+
+#### [HTML&CSS](https://github.com/JaeHyun-Ban/TIL/tree/master/HTML%26CSS)
+- HTML과 CSS의 기초
+
+### J
+
+#### [Java](https://github.com/JaeHyun-Ban/TIL/tree/master/Java)
+#### [java_itbank](https://github.com/JaeHyun-Ban/TIL/tree/master/itbank_java)
+#### [JavaScript_TCPSCHOOL](https://github.com/JaeHyun-Ban/TIL/tree/master/TCP_JavaScript)
 ---
 
-## Storage(기타 저장소)
-### [ProgramingWord](https://github.com/JaeHyun-Ban/TIL/tree/master/Storage/ProgramingWord)
-- 학습중 모르겟는 용어들을 정리
+### S
+
+---
+
+### P
+
+#### [POSTECH MOOC](https://postech.smartlearn.io/)(홈페이지 링크)
+- [컴퓨터공학 입문 1](https://github.com/JaeHyun-Ban/TIL/tree/master/POSTECH%20MOOC/CS_basic1)
+ 
+
+---
+
+# [???](https://github.com/JaeHyun-Ban/TIL/blob/master/RandomPlace.md)
+
