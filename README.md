@@ -15,31 +15,28 @@
 ## Categories
 
 ### C
-#### [CS50](https://github.com/JaeHyun-Ban/TIL/tree/master/CS50(2019))
+- [CS50](https://github.com/JaeHyun-Ban/TIL/tree/master/CS50(2019))
 
 ### D
 
-#### [DB&SQL](https://github.com/JaeHyun-Ban/TIL/tree/master/DBSQL)
+- [DB&SQL](https://github.com/JaeHyun-Ban/TIL/tree/master/DBSQL)
 
 ### H
 
-#### [HTML&CSS](https://github.com/JaeHyun-Ban/TIL/tree/master/HTML%26CSS)
-- HTML과 CSS의 기초
+- [HTML&CSS](https://github.com/JaeHyun-Ban/TIL/tree/master/HTML%26CSS)
+  - HTML과 CSS의 기초
 
 ### J
 
-#### [Java](https://github.com/JaeHyun-Ban/TIL/tree/master/Java)
-#### [java_itbank](https://github.com/JaeHyun-Ban/TIL/tree/master/itbank_java)
-#### [JavaScript_TCPSCHOOL](https://github.com/JaeHyun-Ban/TIL/tree/master/TCP_JavaScript)
----
-
-### S
+- [Java](https://github.com/JaeHyun-Ban/TIL/tree/master/Java)
+- [java_itbank](https://github.com/JaeHyun-Ban/TIL/tree/master/itbank_java)
+- [JavaScript_TCPSCHOOL](https://github.com/JaeHyun-Ban/TIL/tree/master/TCP_JavaScript)
 
 ---
 
 ### P
 
-#### [POSTECH MOOC](https://postech.smartlearn.io/)(홈페이지 링크)
+- [POSTECH MOOC](https://postech.smartlearn.io/)(홈페이지 링크)
 - [컴퓨터공학 입문 1](https://github.com/JaeHyun-Ban/TIL/tree/master/POSTECH%20MOOC/CS_basic1)
  
 
