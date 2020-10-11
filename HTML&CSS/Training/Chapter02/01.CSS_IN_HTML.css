@@ -1,0 +1,4 @@
+/*external 사용법 - 외부파일을 생성한다, 가장 나중에 적용된다*/
+div > p {
+  border: 1px solid slategray;
+}

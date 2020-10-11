@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Bin</title>
+    <style>
+      /*
+      body 아래 div 인 곳에 속성값이 적용된다.
+      body > div = body바로 아래 div만 적용
+      body div = body 아래 모든 div에 적용
+      */
+      body>div {
+        color: green;
+        font-size: 30px;
+        /*바깥쪽 부터 margin - border - padding 순이다*/
+        border: 2px solid slategray;
+        padding: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <span>my text is upper!(body - div)</span>
+      <ul>
+        <li>
+          <span>my text is dummy(body - div - ul - li)</span>
+          <div>
+            <p>
+              위치: div ul li div p<br>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui molestiae eius ullam
+              eveniet
+              ratione nam doloremque enim eum nisi optio provident in impedit velit, expedita, obcaecati distinctio
+              inventore
+              quam architecto.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+
+</html>

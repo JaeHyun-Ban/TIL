@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--internal - 2번째로 적용된다 + style태그를 이용 + 유지보수가 어렵다-->
+    <style>
+      div>p {
+        font-size: 20px;
+      }
+    </style>
+    <title>JS Bin</title>
+  </head>
+
+  <body>
+    <div>
+      <!--inline - 가장 먼저 적용된다-->
+      <p style="color: blue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui molestiae eius ullam eveniet
+        ratione nam doloremque enim eum nisi optio provident in impedit velit, expedita, obcaecati distinctio inventore
+        quam architecto.</p>
+    </div>
+  </body>
+
+</html>

@@ -79,7 +79,7 @@ SELECT * FROM employees WHERE commission_pct is not null;
 
 ------------------------------------------------------------
 --#AND, OR 
---AND와 OR 가 함께 쓰이면 ADN가 먼저 계산이 된다
+--AND와 OR 가 함께 쓰이면 AND가 먼저 계산이 된다
 SELECT department_id, salary
 FROM employees WHERE department_id = 100 AND salary >= 5000;
 
