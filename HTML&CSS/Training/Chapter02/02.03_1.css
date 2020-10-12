@@ -1,0 +1,7 @@
+/* 동일하다면 나중에 것이 적용된다 */
+span {
+  color: red;
+}
+span {
+  color: blue;
+}

@@ -1,0 +1,7 @@
+/* 구체적인 것이 있다면 먼저 적용된다 */
+body > span {
+  color: red;
+}
+span {
+  color: blue;
+}

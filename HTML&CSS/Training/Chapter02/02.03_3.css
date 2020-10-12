@@ -1,0 +1,12 @@
+/* id > class > element순으로 우선 적용된다 */
+#a {
+  color: red;
+}
+
+.b {
+  color: blue;
+}
+
+div {
+  color: green;
+}
