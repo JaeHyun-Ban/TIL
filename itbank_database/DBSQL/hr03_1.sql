@@ -1,4 +1,3 @@
-
 SELECT * FROM employees;
 
 --숫자 함수
