@@ -23,8 +23,11 @@ WHERE job_id = (SELECT job_id FROM employees WHERE employee_id = 103);
 
 
 -- 서브쿼리의 리턴행이 여러개라면 일반 비교연산으로는 구분할 수 없다
+SELECT job_id FROM employees WHERE job_id = 'IT_PROG'; --리턴행이 여러개
 
-
+SELECT * 
+FROM employees
+WHERE job_id = (SELECT job_id FROM employees WHERE job_id = 'IT_PROG'); -->다중행이 들어간 서브쿼리문
 
 
 

@@ -20,7 +20,9 @@ SELECT * FROM auth;
 
 --# INNER JOIN
 SELECT *
-FROM info INNER JOIN auth ON info.user_id = auth.user_id;
+FROM info 
+INNER JOIN auth 
+ON info.user_id = auth.user_id;
 -->연결된 똑같은 컬럼이 2개가 보인다
 -->null인 부분은 자동으로 제외해서 출력하지 않는다
 
