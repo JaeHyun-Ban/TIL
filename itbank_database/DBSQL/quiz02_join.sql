@@ -59,7 +59,7 @@ ON j.job_id = jh.job_id;
 --문제 5.
 --Steven King의 부서명을 출력하세요
 SELECT e.first_name ||' '|| e.last_name as name,
-          d.department_name
+          d.department_name as 부서명
 FROM employees e
 RIGHT OUTER JOIN departments d -- inner join으로 해도 된다 / join만써도 됨
 ON e.department_id = d.department_id
