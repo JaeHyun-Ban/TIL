@@ -2,7 +2,10 @@
 
 http://tcpschool.com/javascript/intro
 
-## 앞으로 일정
+## 01. 자바스크립트 시작
 
-1. 02 - 08, 09
-2. 03 - 10, 11, 12
+## 02. 타입(type)
+
+## 03. 연산자(operator)
+
+## 04. 제어문(statements)
