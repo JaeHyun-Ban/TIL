@@ -1,44 +1,4 @@
----------테이블 생성---------
-
-create table dept2(
-    dept_no NUMBER(2, 0), --2자리 저장, 실수는 저장x
-    dept_name varchar2(14), --byte기반 가변 문자열 
-    loca varchar2(13),
-    dept_date DATE,
-    dept_bonus number(10)
-);
-
-select * from dept2;
-insert into dept2 values(99, '영업', '서울', sysdate, 2000000000); --자리수 확인
-
----------------테이블 수정 alter table-----------
-alter table dept2
-add dept_count number(3); -- 추가
-desc dept2;
-
-alter table dept2
-modify dept_count number(10); --수정
-desc dept2;
-
-alter table dept2
-rename column dept_count to emp_count; --컬럼명 변경
-desc dept2;
-
-alter table dept2
-drop column emp_count; --컬럼 삭제
-COMMIT;
-
----------테이블 삭제----------
-drop table dept2;
---drop table dept2 cascade CONSTRAINTS 제약조건명; --해당테이블에 FK제약조건이 들어있더라고 삭제
---왜래키란 다른 테이블의 기본 키 필드를 가지는 데이터의 참조무결성을 확인하기 위해 사용된다.
-
-
---테이블데이터 전부삭제
---truncate table dept2;
-
-
-----------------------------------------------------
+---------------------------------------------------
 --# 테이블 생성과 제약조건
 /*
 열레벨 제약조건(PK, FK, not null, check, unique)
@@ -48,7 +8,6 @@ drop table dept2;
 4. FK - 참조하는 테이블의 PK를 지칭하는 컬럼
 5. CHECK - 정의된 형식만 들어오도록 허용
 */
-
 
 desc locations;
 create table dept2(
@@ -74,9 +33,50 @@ create table dept2(
     constraints dept_name_uk unique (dept_name),
     constraints dept_gender_ck check (dept_gender in ('F', 'M')), -- 체크: 적용컬럼 + 조건
     constraints dept_loca_fk foreign key (loca) references locations(location_id) --참조 + 참조테이블(참조하는 컬럼)
-    
-    
 );
+
+--제약 조건은 추가, 삭제가 가능합니다.
+drop table dept2;
+create table dept2(
+    dept_no number(2),
+    dept_name varchar2(14),
+    loca number(4),
+    dept_date date default sysdate, 
+    dept_bonus number(10),
+    dept_gender char(1)
+);
+--pk와 fk정도는 꼭 알아두자
+
+--pk추가
+alter table dept2 add constraints dept_no_pk primary key (dept_no);
+-->테이블 변경 dept2 제약조건 추가 dept_no_pk(이름) primary key dept_no를
+
+--fk추가
+alter table dept2 add constraints dept_loca_fk foreign key (loca) references locations(location_id);
+-->테이블 변경 dept,2 제약조건 추가, 이름:dept_loca_fk 외래키 loca를 참조시킨다 locations테이블의location_id랑 
+
+--check추가
+alter table dept2 add constraints dept_gender_check check(dept_gender in('Y', 'N'));
+
+--unique추가
+alter table dept2 add constraints dept_name_uk unique (dept_name);
+
+--not null은 열 수정형태로 변경합니다.
+alter table dept2 modify dept_name varchar(14) not null;
+
+--제약조건 삭제(제약조건 이름으로 삭제 진행)
+alter table dept2 drop constraints dept_no_pk;
+
+--FK는 부모테이블에 값이 없다면 삽입이 불가능하다
+select * from locations;  
+insert into dept2 values(10, 'test', 100, sysdate, 5000, 'Y'); --locations에 location_id 100이 없기 때문에 불가능
+desc dept2;
+
+
+
+
+
+
 
 
 
