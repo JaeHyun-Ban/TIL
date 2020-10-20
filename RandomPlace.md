@@ -38,3 +38,7 @@ sys ad sysdba 입력 > 비밀번호 > 로그인 성공
 - Live Server 문제
   - https://devlimk1.tistory.com/7
   - 127.0.0.1전송한 데이터가 없습니다 를 해결
+
+---
+
+데이터베이스 구현 : 메모장으로 작성해서 제출

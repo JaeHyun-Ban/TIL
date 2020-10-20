@@ -22,7 +22,7 @@ ALTER USER user01 default TABLESPACE MY_DATA quota UNLIMITED ON MY_DATA; --
 */
 create user USER02 IDENTIFIED BY USER02; --생성
 grant connect, resource to USER02; --권한 부여
-alter user USER02 default tablespace MY_DATA quota unlimited on  
+alter user USER02 default tablespace MY_DATA quota unlimited on;
 
 
 MY_DATA; --테이블 스페이스 설정

@@ -115,8 +115,8 @@ update view_emp_test set department_id = 100;
 
 
 
-
---시퀀스 (순차적으로 증가하는 값)
+--------------------------------------------------------------
+--# 시퀀스 (순차적으로 증가하는 값) - sequence
 select * from user_sequences; --시퀀스 확인명령
 select * from user_views; -- view확인명령
 select * from user_constraints; -- 제약조건 확인명령
@@ -130,6 +130,7 @@ create sequence dept3_seq increment by 1 start with 1 maxvalue 10 nocycle nocach
 --시퀀스 삭제
 drop sequence dept3_seq;
 
+drop table dept3;
 -- 테이블 생성
 create table dept3(
     dept_no number(3) primary key,
@@ -139,6 +140,7 @@ create table dept3(
 desc dept3;
 
 --시퀀스 사용하기 CURRVAL, NEXTVAL
+INSERT INTO dept3(dept_no, dept_name) VALUES(dept3_seq.currval, 'test1');
 INSERT INTO dept3(dept_no, dept_name) VALUES(dept3_seq.nextval, 'test');
 SELECT * FROM dept3;
 
@@ -182,7 +184,7 @@ insert into dept3 values(to_char(sysdate, 'YYYYMMDD') || '-' || dept3_seq.nextva
 select * from dept3;
 
 
-
+--------------------------------------------------------------------
 -- # INDEX
 --오라클 데이터베이스 테이블안에서 원하는 레코드를 빠르게 찾아갈 수 있도록 만들어진 데이터 구조이다.
 -- PRIMARY KEY, UNIQUE 제약조건에서 자동으로 생성되고, 조회를 빠르게 해주는 hint역활을 한다.
@@ -197,6 +199,9 @@ create index emps_first_name_ix on emps(first_name); --강제로 first_name에 I
 -- INDEX 삭제
 drop index emps_first_name_ix;
 
+
+--index는 트리구조로 생성되며 생성할 때마다 점점 깊어지게 되어서 
+--많이 생성하면 탐색시간이 오래걸리게 된다.
 
 
 
