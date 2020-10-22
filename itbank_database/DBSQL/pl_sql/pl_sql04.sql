@@ -36,6 +36,7 @@ select * from jobs;
 --------------------------------------------------------------
 -- # 프로시저 수정은 동일한 이름으로 수정
 CREATE OR REPLACE PROCEDURE new_job_proc( --구문 그대로 생성(CREATE) 또는(OR) 수정(REPLACE)로 쓰이는구나
+    --마치 매개변수와 비슷하다
     p_job_id in jobs.job_id%TYPE,
     p_job_title in jobs.job_title%TYPE,
     --    p_job_min_salary in jobs.min_salary%TYPE,
@@ -74,14 +75,14 @@ select * from jobs;
 
 
 --------------------------------------------------------
--- # OUT 매개변수
+-- # OUT 매개변수(외부로 출력하기 위함)
 -- OUT변수를 사용하는 프로시저는 익명블록에서 실행을 한다.
 CREATE OR REPLACE PROCEDURE new_job_proc02(
     p_job_id in jobs.job_id%TYPE, -- IN 매개변수는 값을 넣어주기만 한다
     p_job_title in jobs.job_title%TYPE,
     p_min_salary in jobs.min_salary%TYPE := 0, -- 기본값 설정
     p_max_salary in jobs.max_salary%TYPE,
-    p_result OUT varchar2 -- OUT 매개변수는 외부로 출력을 위한것이다
+    p_result OUT varchar2 -- OUT 매개변수는 외부로 "출력을 위한것이다"
     
 ) IS
     v_count number := 0;
@@ -139,7 +140,6 @@ CREATE OR REPLACE PROCEDURE testProc(
 ) IS
 
 BEGIN
-   
     DBMS_OUTPUT.PUT_LINE(p_var1); -- x, IN, OUT이 없다면 단순히 사용만 가능
     DBMS_OUTPUT.PUT_LINE(p_var2); -- out, OUT변수는 프로시저가 끝나기 전까지 값의 할당이 안됨.
     DBMS_OUTPUT.PUT_LINE(p_var3); -- in out, IN, OUT은 둘 다 사용 가능
@@ -165,7 +165,7 @@ END;
 
 
 ---------------------------------------------------------------------------
--- # return 구문
+-- # return 구문(C언어의 포인터 개념과 비슷하다)
 /*
 1. employees에서
 job_id만 in변수로 입력받아서, 해당 아이디가 있는지 확인하고,
@@ -177,32 +177,55 @@ CREATE OR REPLACE PROCEDURE new_emp_proc(
     p_job_id IN employees.job_id%TYPE --job_id만 in으로 입력
 ) IS
     v_count number := 0; --중복확인용 v_count
-    v_salary number := 0; --급여 합계
+    v_total number := 0; --급여 합계
     
 BEGIN
-    SELECT COUNT(*)
-    INTO v_count --값을 대입
+    SELECT COUNT(*), SUM(salary)
+    INTO v_count, v_total --값을 대입
     FROM employees
     WHERE job_id = p_job_id; --존재한다면
+--    WHERE job_id like '%' || p_job_id || '%";
+-->>>like를 이용 앞 뒤에 뭐가있던 상관없이 찾아준다.
     
     IF v_count = 0 THEN -- 중복이 아니라면
-        DBMS_OUTPUT.PUT_LINE('p_job_id: ' || p_job_id); --단순 출력해주기
+        DBMS_OUTPUT.PUT_LINE(p_job_id || '는 존재하지 않습니다'); --단순 출력해주기
+        RETURN; -- 프로시저 종료
     ELSE -- 존재한다면    
-        SELECT sum(salary) -- 급여의 합만 추출해서
-        INTO v_salary -- 저장해주고
-        FROM employees
-        WHERE job_id = p_job_id; --중복인 id의 
+        DBMS_OUTPUT.PUT_LINE(p_job_id || '들의 급여 총 합: ' || v_total);
     END IF;
-    
-    DBMS_OUTPUT.PUT_LINE(p_job_id || '의 급여 합: ' || v_salary);
-    
+
 END;
+
+-- 접속을 끊었다면 꼭 해주어야 한다.
+SET SERVEROUTPUT ON; 
 
 EXECUTE new_emp_proc('IT_PROG'); --job_id입력해서 확인하기
 
 
+-------------------------------------------------------------------------
+-- # 예외처리 구문 EXCEPTION WHEN others(예외 종류) THEN
+
+DECLARE
+    v_num number := 0;
+BEGIN
+    v_num := 10 / 0;
+    
+    --에러가 난 구문을 예외처리해준다
+    EXCEPTION WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('0으로 나눌 수 없습니다.');
+    
+END;
 
 
+-----------------------------------------------------------
+-- # TRIGGER(중요중요해)
+--어떤 테이블에 부착시켜놓은 하나의 프로시저
+--테이블이 특정구문을 동작할 때 동시에 실행하고 싶은 SQL을 함께 실행시켜준다
+
+
+-- 트리거 삭제
+DROP PROCEDURE new_job_proc;
+DROP PROCEDURE new_job_proc02;
 
 
 

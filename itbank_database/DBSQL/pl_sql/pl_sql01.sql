@@ -40,7 +40,8 @@ END;
 
 ------------------------------------------------------------------------------
 /*
--- # DML문
+-- # DML문(Data Mainpulation Language) 
+한마디로 데이터를 입력(insert),수정(update),삭제(delete),수행(merge)하는 기능이다
 DDL이 사용이 불가능
 일반적인 SQL문의 SELECT구문을 사용하는데.(begin에서)
 SELECT절 아래에는 `INTO절`을 이용해서 변수를 할당한다.

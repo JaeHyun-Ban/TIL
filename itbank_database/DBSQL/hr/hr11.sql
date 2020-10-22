@@ -5,7 +5,7 @@ view 는 실제로 데이터가 물리적으로 저장된 형태는 아니다(�
 
 그래서 view에 DML작업을 하게 되면 실제 테이블에 적용이 된다(다만, 제약사항이 많이 존재한다.)
 */
-
+SELECT * FROM employees;
 select * from user_sys_privs; --현재 사용자 권한확인
 
 --# 단순 view - 하나의 테이블을 기반으로 한 view

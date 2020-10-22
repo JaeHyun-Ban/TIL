@@ -1,6 +1,6 @@
 -- # While 구문
 -- WHILE 조건
--- LOOP -->참 일시 루프 실행
+-- LOOP -->조건이 `참`이라면 루프 실행
 -- END LOOP;
 
 DECLARE
