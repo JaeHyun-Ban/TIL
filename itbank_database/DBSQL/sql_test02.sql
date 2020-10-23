@@ -140,9 +140,10 @@ create table sales(
     regdate date default sysdate --날짜
 );
 
+--day_of_sales는 sales에 있는 값들을 모두 다 받아주어야 한다
 create table day_of_sales(
-regdate date,
-final_total number(10)
+    regdate date,
+    final_total number(10)
 );
 create or replace procedure salesProc(
     p_regdate in day_of_sales.regdate%TYPE -- 마감내역 일자
@@ -155,9 +156,7 @@ begin
     from day_of_sales
     WHERE regdate = p_regdate; 
     
-    select price
-    into v_price
-    from sales;
+    select price into v_price from sales;
     
     if v_count = 1 then --마감내역이 존재 = 업데이트
         update day_of_sales
@@ -174,12 +173,90 @@ EXECUTE salesproc(sysdate);
 
 --------------------------------------------------------------------------------------
 
+--[문항7]  프로시저명 - salesProc sales테이블은 오늘의 판매내역이다. 
+--day_of_sales테이블은 판매내역 마감시 오늘 일자의 총매출을 기록하는 테이블이다. 
+--조건) day_of_sales의 마감내역이 이미 존재하면 업데이트 처리
+create table sales( -- sales테이블 생성
+    sno number(5), -- 번호
+    name varchar2(30), -- 상품명
+    total number(10), --수량
+    price number(10), --가격
+    regdate date default sysdate --날짜
+);
+create table day_of_sales(
+    regdate date, 
+    final_total number(10)
+);
+
+
+
+create or replace procedure salesProc ( --프로시저 생성
+   s SALES.SNO% type,
+   n SALES.NAME% type,
+   t SALES.TOTAL% type,
+   p SALES.PRICE% type
+) is
+   today date;
+   counts number;
+   total number;
+begin
+   insert into SALES(sno, name, total, price) values (s, n, t, p);
+
+   select sysdate into today from dual; --오늘 날짜만 뽑아서 등록
+   
+   --오늘 날짜로 등록되어있는지 확인
+   select count(*) into counts from DAY_OF_SALES where regdate = today; 
+    
+    --이미 등록 했다면
+   if counts > 0 then
+       select (FINAL_TOTAL + p) into total from day_of_sales; --오늘 매출을 총 매출에 넣어줌
+       update DAY_OF_SALES set FINAL_TOTAL = total where regdate = today;
+   else
+       insert into DAY_OF_SALES values (today, p);
+   end if;
+end;
+
 --------------------------------------------------------------------------------------
+--강사님
+
+--마감내역 프로시저
+create or replace procedure salesproc(
+    --날짜만 입력받아서 비교 > 그 후 처리
+    p_regdate sales.regdate%type
+) is
+    v_final_total number := 0; --최종 매출내역
+    v_check number := 0;
+begin
+
+    select sum(total * price) -->sum을 이런식으로 활용해도 좋네
+    into v_final_total
+    from sales
+    where to_char(regdate, 'YY/MM/DD') = to_char(p_regdate, 'YY/MM/DD'); 
+    -->오늘날짜를 문자열 형태를 통일시켜서 비교해준다.
+    
+    --존재하는지 확인(if구문에서 활용할 예정)
+    select count(*)
+    into v_check
+    from day_of_sales
+    where to_char(regdate, 'YY/MM/DD') = to_char(p_regdate, 'YY/MM/DD'); 
+    
+    
+    
+    if v_check = 0 then --마감테이블에 없다면 insert
+        insert into day_of_sales(regdate, final_total) values (p_regdate, v_final_total);
+    else --마감 테이블에 존재 = update
+        update day_of_sales set final_total = v_final_total
+        where to_char(regdate, 'YY/MM/DD') = to_char(p_regdate, 'YY/MM/DD'); 
+    
+    end if;
+    
+    commit;
+    
+    DBMS_OUTPUT.put_line(v_final_total);
+end;
 
 
-
-
-
+--조인문, 다중테이블 검색, 서브쿼리절을 잊지말고(더 중요하다..._)
 
 
 
