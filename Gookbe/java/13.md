@@ -1,0 +1,122 @@
+# 인터페이스
+
+인터페이스 = 사용하는 방법..
+
+> 인터페이스를 확인하면 그 메서드를 사용하는 법을 알 수 있다
+> ex) 인터페이스 확인해봐~
+> = 어떻게 쓰는지 한번 봐봐
+
+단순히 이해하기 어렵고 직접 프로그래밍을 해봐야 점점 이해가 가는 내용이다.
+
+## 상수, 추상메서드만 가지고 있는 인터페이스
+
+인터페이스 != 클래스(class)
+
+- 인터페이스 선언된 변수 **public static final**을 생략하더라도 컴파일 과정에서 자동으로 붙게된다.(**상수**)
+  - 변수 선언 시 자동으로 상수취급한다.
+- 인터페이스의 메서드를 추상메서드 형식으로 선언하면 **abstract**를 붙이지 않더라도 자동으로 컴파일 과정에서 붙게된다(**추상메서드**)
+  - 메서드 선언 시 자동으로 추산메서드가 된다.
+    > `인터페이스는 상수와 추상메서드만 존재한다.`
+- 추가적으로 static메서드의 선언 또한 가능하다(Java 1.8ver 이후)
+
+---
+
+### 인터페이스는 왜 생겼을까?
+
+- 자바의 인터페이스는 객체의 **사용방법을 정의한 타입**(메서드 명세서)으로 객체의 교환성을 높여주기 때문에 **다형성을 구현하는 매우 중요한 역할**을 한다.
+  - 인터페이스로 정의하고 포유류의 기능을 **구현(상속)**하는 형태로 사용가능하다
+  - 클래스에서는 인터페이스를 구형할 때 클래스 이름 뒤에 `implements`키워드를 사용한다.
+    > class Dog extend Animal implements 포유류{... }
+
+---
+
+### 기능1: 다중 상속
+
+- 인터페이스는 다중 상속을 표현할 수 있다.
+- 여러 인터페이스를 동시에 구현할 수 있다.
+  - 단 인터페이스에 있는 **모든 추상 메서드**는 Dog에서 모두 **오버라이딩**되야 한다.
+    > class Dog extends Animal implements 포유류, Iper {... }
+
+---
+
+### 기능2: 메서드의 명세서
+
+- 자바의 인터페이스는 객체의 **사용 방법을 정의한 타입**(메서드 명세서)으로 객체의 교환성을 높여주기 때문에 **다형성을 구현하는 매우 중요한 역할**을 한다.
+  > 3가지 형태가 가능하다
+  > Animal a = new Dog();
+  > IPet I = new Dog();
+  > Dog d = new Dog();
+  >
+  > > IPet을 부모타입으로 비슷한 기능을 묶어서 사용할 수 있다.
+  > > IPet pet1 = new Dog();
+  > > IPet pet2 = new Cat();
+  > > IPet pet3 = new GoldFish();
+
+---
+
+### 기능3
+
+- 사용방법이 동일한 클래스를 만드는 기술이다.
+- 프로그램에서 실제 사용되는 방법이다.
+  **인터페이스를 사용하면 각자의 나름대로 형식에 맞추어 사용방법을 정의하는게 가능하다!!**
+
+```
+**사용해야하는 것**
+public interface Printed {
+    public void print(String document);
+    public void colorPrint(String document, String color);
+    public int copy(int n);
+}
+```
+
+```
+**LG프로그램 개발자**
+public class LG implements Printed {
+    @Override
+    public void print(String document) {…}
+    @Override
+    public void colorPrint(String document, String color) {…}
+    @Override
+    public int copy(int n) {…}
+}
+
+**삼성 프로그램 개발자**
+public class Samsung implements Printed {
+    @Override
+    public void print(String document) {…}
+    @Override
+    public void colorPrint(String document, String color) {…}
+    @Override
+    public int copy(int n) {…}
+}
+```
+
+인터페이스는 한마디로 **"이렇게 작성하시오~"**라는 것 같다
+
+- interface간에도 상속이 가능하다
+- interface간에 상속은 extends를 이용한다
+
+---
+
+### interface 정리
+
+- interface는 **상수**와 **추상메서드**만을 구성멤버로 가진다.
+
+1. 인터페이스는 기본적으로 **다중상속을 지원**한다.
+2. 자바의 인터페이스는 객체의 **사용방법을 정의한 타입(메서드 명세서)**으로 **다형성을 구현하는 매우 중요한 역할**을 한다.
+
+- **인터페이스도 데이터 타입(부모타입)이 될 수 있다.**
+
+3. 사용방법이 동일한 클래스를 만드는 기술이다.
+
+- 인터페이스의 구현 키워드: **implements**
+- 인터페이스도 **extends** 키워드를 사용하여 **인터페이스 간의 상속을 구현할 수 있다**.
+
+```
+# 인터페이스는 추상클래스의 확장된 형태인가?
+-> 네, 클래스가 가지는 한계점을 보완하고 발전된 형태라해도 무방하다
+
+# 부모클래스의 변화
+-> 일반클래스 --> 오버라이딩 강제(추상클래스) --> 오버라이딩 강제 + 다중 상속(**인터페이스**)
+
+```
