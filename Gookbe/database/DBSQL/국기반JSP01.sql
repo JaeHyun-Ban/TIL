@@ -12,3 +12,4 @@ alter table users add CONSTRAINT users_pk PRIMARY KEY (id);
 select * from users;
 
 select * from users where id = 'asd123' and pw = '1234';
+
