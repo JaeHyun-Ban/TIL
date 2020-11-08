@@ -1,6 +1,5 @@
-
--- °Ô½ÃÆÇ Å×ÀÌºí »ý¼º
---±Û¹øÈ£,ÀÛ¼ºÀÚ,Á¦¸ñ,³»¿ë,µî·ÏÀÏ, Á¶È¸¼ö(±âº»0)
+-- ê²Œì‹œíŒ í…Œì´ë¸” ìƒì„±
+--ê¸€ë²ˆí˜¸,ìž‘ì„±ìž,ì œëª©,ë‚´ìš©,ë“±ë¡ì¼, ì¡°íšŒìˆ˜(ê¸°ë³¸0)
 create table board(
     bno NUMBER(10, 0) not null,
     writer VARCHAR2(50) not null,

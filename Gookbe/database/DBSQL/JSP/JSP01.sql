@@ -17,3 +17,5 @@ select * from users where id = 'asd123' and pw = '1234';
 update board SET title = 'aaa', content = 'aaa' WHERE bno = 2;
 
 DELETE FROM board WHERE bno = 2;
+
+commit

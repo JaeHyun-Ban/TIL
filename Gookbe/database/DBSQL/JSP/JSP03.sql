@@ -15,7 +15,7 @@ BEGIN
         
     end LOOP;
     
-    commit;--commit»©¸ÔÁö ¹ß¾ÆÁÖ±â
+    commit;--commitë¹¼ë¨¹ì§€ ë°œì•„ì£¼ê¸°
 
 END;
 */
@@ -24,9 +24,9 @@ select BOARD_SEQ.nextval from dual;
 
 SELECT * FROM board;
 
---1. °¡Àå ¾ÈÂÊ(inline view) ¼¿·ºÆ®±¸¹®¿¡¼­ Á¤·ÄÇØ¼­ Á¶È¸
---2. rownumÀ» ±¸ÇØ¼­ Á¶È¸
---3. rownumÀ¸·Î Á¶°ÇÀý
+--1. ê°€ìž¥ ì•ˆìª½(inline view) ì…€ë ‰íŠ¸êµ¬ë¬¸ì—ì„œ ì •ë ¬í•´ì„œ ì¡°íšŒ
+--2. rownumì„ êµ¬í•´ì„œ ì¡°íšŒ
+--3. rownumìœ¼ë¡œ ì¡°ê±´ì ˆ
 SELECT * 
 FROM(
     SELECT ROWNUM rn, 
@@ -41,26 +41,7 @@ FROM(
           ORDER BY bno DESC)
     ) 
 WHERE rn > 0 AND rn <= 10; 
--->ÃÖ½Å±Û 11~20¹ø¸¸ »Ì¾Æ¿À±â
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-->ìµœì‹ ê¸€ 11~20ë²ˆë§Œ ë½‘ì•„ì˜¤ê¸°
 
 
 
