@@ -54,9 +54,9 @@ DECLARE
     
 BEGIN
 
-    WHILE var1 <= 200
+    WHILE var1 <= 5
     LOOP
-        INSERT INTO bbs(bno, writer, title, content) VALUES(BBS_SEQ.nextval, 'test'||var1, 'test'||var1, 'test'||var1);
+        INSERT INTO bbs(bno, writer, title, content) VALUES(BBS_SEQ.nextval, 'asd1', '123456', 'test'||var1);
         
         
         var1 := var1 + 1;
