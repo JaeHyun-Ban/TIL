@@ -25,6 +25,7 @@ create table members(
     phone2 VARCHAR2(50) not null,
     phone3 VARCHAR2(50) not null,
     email VARCHAR2(100),
+    eaddr VARCHAR2(50),
     addr_basic VARCHAR2(200),
     addr_detail VARCHAR2(200),
     regdate date default sysdate
@@ -33,12 +34,7 @@ drop table members;
 --id를 pk로 지정
 ALTER TABLE members ADD CONSTRAINT members_pk PRIMARY KEY (id);
 commit;
---------------------------------------------------------------
---게시판에 test글 작성
 
-
-
--------------------------------------------
 --test
 select * from members;
 INSERT INTO members(id, password, name, phone, email, address) 
@@ -47,7 +43,7 @@ VALUES('test', 'test', 'test', 'test', 'test', 'test');
 SELECT * FROM members WHERE id = 'asd1' AND password = 123456;
 
 ---------------------------------------------------------
---게시판 글 넣기
+--게시판 test글 넣기
 DECLARE
 
     var1 NUMBER := 1;
@@ -83,6 +79,7 @@ FROM(
     ) 
 WHERE r > 0 AND r <= 10 AND writer = 'asd1'; 
 
+DELETE FROM members WHERE id = ? AND password = ?;
 
 
 
