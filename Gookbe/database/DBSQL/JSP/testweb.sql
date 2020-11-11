@@ -79,10 +79,15 @@ FROM(
     ) 
 WHERE r > 0 AND r <= 10 AND writer = 'asd1'; 
 
-DELETE FROM members WHERE id = ? AND password = ?;
+--DELETE FROM members WHERE id = ? AND password = ?;
 
 
-
+SELECT * 
+FROM bbs b
+LEFT OUTER JOIN members m
+ON b.writer = m.id
+where b.writer = id
+ORDER BY b.bno DESC;
 
 
 
