@@ -1,5 +1,7 @@
 https://k0102575.github.io/articles/2020-04/settings-sync
 
+# VSCode설정 공유하는 방법
+
 201a766b99f92ec2bb35148b2a0461547186c54d
 
 
