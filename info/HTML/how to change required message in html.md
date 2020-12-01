@@ -1,7 +1,9 @@
 출처
 https://stackoverflow.com/questions/24391078/how-to-change-the-default-message-of-the-required-field-in-the-popover-of-form-c
 
-# required의 메세지를 바꾸는법
+# alert이벤트 발생 문구 변경하는법
+
+## required의 메세지를 바꾸는법
 
 ---
 
