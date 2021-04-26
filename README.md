@@ -39,7 +39,7 @@
 - [HTML&CSS](https://github.com/JaeHyun-Ban/TIL/tree/master/HTML%26CSS)
   - HTML과 CSS의 기초
 - [Healing_Final](https://github.com/JaeHyun-Ban/Healing_Final)
-  - 팀프로젝트 
+  - 팀프로젝트 결과물
 
 
 ### J
