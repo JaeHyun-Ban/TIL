@@ -64,7 +64,7 @@
 
 
 ### R
-- [R데이터분석]
+- [R데이터분석](https://github.com/JaeHyun-Ban/TIL/tree/master/Gookbe/R(%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D))
   - 국비지원
 
 
