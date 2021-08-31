@@ -6,10 +6,17 @@
 ## 작성 규칙
 
 - ~~폴더와 파일의 이름은 영어로 작성한다.~~
+
+  > 무리해서 작성하지말고 차근차근
+
 - 배운내용에 추가로 알게된 점이 있다면 업데이트를 진행할 것이다
+
 - 검색을통해 알게된것은 외부링크를 첨부해서 작성한다
+
 - 작성한 것은 README에 링크를 생성해 알파벳 순서대로 정렬한다.
+
 - 모든 문서는 마크다운(Markdown, .md)로 작성한다
+
 - **NEW** 작성 방법 변경
   - 최대한 간략하게 작성하려고 하기.
 
@@ -23,20 +30,34 @@
 
 - [Book](https://github.com/JaeHyun-Ban/TIL/tree/master/Book)
 
+- [BaekJoon](https://github.com/JaeHyun-Ban/TIL/tree/master/BaekJoon)
+
+  > 문제풀이
+
 ### C
 
 - [CS50](<https://github.com/JaeHyun-Ban/TIL/tree/master/CS50(2019)>)
-- [CSS](https://github.com/JaeHyun-Ban/TIL/tree/master/Gookbe/CSS)
-  - 국비지원
 
 
 ### D
 
 - [DB&SQL](https://github.com/JaeHyun-Ban/TIL/tree/master/DBSQL)
 - [DataBase](https://github.com/JaeHyun-Ban/TIL/tree/master/Gookbe/database)
-  - 국비지원
+- [DataStructures](https://github.com/JaeHyun-Ban/TIL/tree/master/boost_DataStructures)
 
+### G
 
+- [GooKbe](https://github.com/JaeHyun-Ban/TIL/tree/master/Gookbe)
+
+  > 국비지원
+  - [Java](https://github.com/JaeHyun-Ban/TIL/tree/master/Gookbe/java)
+  - [JSP](https://github.com/JaeHyun-Ban/TIL/tree/master/Gookbe/JSP)
+  - [Spring](https://github.com/JaeHyun-Ban/TIL/tree/master/Gookbe/Spring)
+  - [DB](https://github.com/JaeHyun-Ban/TIL/tree/master/Gookbe/database)
+  - [CSS](https://github.com/JaeHyun-Ban/TIL/tree/master/Gookbe/CSS)
+  - [JavaScript](https://github.com/JaeHyun-Ban/TIL/tree/master/Gookbe/JS(%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8))
+  - [R](https://github.com/JaeHyun-Ban/TIL/tree/master/Gookbe/R(%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D))
+  - [git](https://github.com/JaeHyun-Ban/TIL/tree/master/Gookbe/git)
 
 ### H
 
@@ -49,13 +70,6 @@
 ### J
 
 - [Java](https://github.com/JaeHyun-Ban/TIL/tree/master/Java)
-- [Java](https://github.com/JaeHyun-Ban/TIL/tree/master/Gookbe/java)
-  - 국비지원
-- [JavaScript_TCPSCHOOL](https://github.com/JaeHyun-Ban/TIL/tree/master/TCP_JavaScript)
-- [JavaScript](https://github.com/JaeHyun-Ban/TIL/tree/master/Gookbe/JS(%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8))
-  - 국비지원
-- [JSP](https://github.com/JaeHyun-Ban/TIL/tree/master/Gookbe/JSP)
-  - 국비지원
 
 
 
@@ -63,21 +77,19 @@
 ### P
 
 - [POSTECH MOOC](https://postech.smartlearn.io/)(홈페이지 링크)
+
+- [Programmers](https://github.com/JaeHyun-Ban/TIL/tree/master/Programmers)
+
+  > 문제풀이
+
 - [컴퓨터공학 입문 1](https://github.com/JaeHyun-Ban/TIL/tree/master/POSTECH%20MOOC/CS_basic1)
 
-
-
-### R
-- [R데이터분석](https://github.com/JaeHyun-Ban/TIL/tree/master/Gookbe/R(%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D))
-  - 국비지원
-
-
-
-### S
-- [Spring](https://github.com/JaeHyun-Ban/TIL/tree/master/Gookbe/Spring)
-  - 국비지원
+  
 
 ### T
+- [TCP_SCHOOL](https://github.com/JaeHyun-Ban/TIL/tree/master/TCP)
+  - [HTML](https://github.com/JaeHyun-Ban/TIL/tree/master/TCP/HTML)
+  - [JavaScript](https://github.com/JaeHyun-Ban/TIL/tree/master/TCP/JavaScript)
 - [TeamProject_Record](https://github.com/JaeHyun-Ban/TeamProject_Record)
   -  팀프로젝트 기록
 
