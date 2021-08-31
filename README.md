@@ -15,7 +15,7 @@
 
 - 작성한 것은 README에 링크를 생성해 알파벳 순서대로 정렬한다.
 
-- 모든 문서는 마크다운(Markdown, .md)로 작성한다
+- 모든 문서는 Markdown으로 작성한다
 
 - **NEW** 작성 방법 변경
   - 최대한 간략하게 작성하려고 하기.
@@ -50,6 +50,7 @@
 - [GooKbe](https://github.com/JaeHyun-Ban/TIL/tree/master/Gookbe)
 
   > 국비지원
+
   - [Java](https://github.com/JaeHyun-Ban/TIL/tree/master/Gookbe/java)
   - [JSP](https://github.com/JaeHyun-Ban/TIL/tree/master/Gookbe/JSP)
   - [Spring](https://github.com/JaeHyun-Ban/TIL/tree/master/Gookbe/Spring)
