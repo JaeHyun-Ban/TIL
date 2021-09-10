@@ -66,6 +66,8 @@
   - HTML과 CSS의 기초
 - [Healing_Final](https://github.com/JaeHyun-Ban/Healing_Final)
   - 팀프로젝트 결과물
+  - [TeamProject_Record](https://github.com/JaeHyun-Ban/TeamProject_Record)
+    -  팀프로젝트 기록
 
 
 ### J
@@ -91,9 +93,7 @@
 - [TCP_SCHOOL](https://github.com/JaeHyun-Ban/TIL/tree/master/TCP)
   - [HTML](https://github.com/JaeHyun-Ban/TIL/tree/master/TCP/HTML)
   - [JavaScript](https://github.com/JaeHyun-Ban/TIL/tree/master/TCP/JavaScript)
-- [TeamProject_Record](https://github.com/JaeHyun-Ban/TeamProject_Record)
-  -  팀프로젝트 기록
 
 ---
 
-# [???](https://github.com/JaeHyun-Ban/TIL/blob/master/RandomPlace.md)
+# 
