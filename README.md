@@ -26,6 +26,10 @@
 
 ## Categories
 
+### TIL
+
+- 오늘 배운 내용 간략하게 작성
+
 ### 팀프로젝트
 
 - [프로젝트 힐링](https://github.com/JaeHyun-Ban/TeamProject_Record)
@@ -35,6 +39,10 @@
 ### HTML&CSS
 
 - [초보자를 위한 HTML & CSS 동작과 원리](https://github.com/JaeHyun-Ban/TIL/tree/master/HTML%26CSS)
+
+### Spring
+
+- [스프링부트 블로그 프로젝트](https://github.com/JaeHyun-Ban/TIL/tree/master/springboot)
 
 ### Data Structure
 
