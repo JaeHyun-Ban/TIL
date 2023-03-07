@@ -12,4 +12,15 @@
 
 ---
 
+### 📚 [학습자료정리중](https://github.com/JaeHyun-Ban/TIL/tree/master/~20220814)
+
+---
+
 ### 📚 [8월](https://github.com/JaeHyun-Ban/TIL/tree/master/08)
+
+---
+
+### 코딩테스트
+
+- programmers
+- baekjoon
