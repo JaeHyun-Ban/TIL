@@ -12,7 +12,7 @@
 
 ---
 
-### [코딩테스트] (https://github.com/JaeHyun-Ban/TIL/tree/master/codingTest/src)
+### 📚 [코딩테스트](https://github.com/JaeHyun-Ban/TIL/tree/master/codingTest/src)
 
 ---
 
