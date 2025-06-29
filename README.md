@@ -17,10 +17,7 @@
 ---
 
 ### 📚 [8월](https://github.com/JaeHyun-Ban/TIL/tree/master/08)
-ttt
 ---
 
-### 코딩테스트
+### [코딩테스트] (https://github.com/JaeHyun-Ban/TIL/codingTest/src)
 
-- programmers
-- baekjoon
