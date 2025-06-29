@@ -17,7 +17,6 @@
 ---
 
 ### 📚 [8월](https://github.com/JaeHyun-Ban/TIL/tree/master/08)
-dddd
 ---
 
 ### 코딩테스트
