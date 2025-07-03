@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.HashSet;
 
 public class
-bkj1764 {
+bkj001_1764 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

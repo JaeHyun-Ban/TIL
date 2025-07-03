@@ -36,7 +36,7 @@ public class pg03 {
         for(int i = 0; i < lost.length; i++){
             //잃어버린 번호, 여벌의 번호 대조
             //일어버린 번호-1 
-            if(reserve.)
+//            if(reserve.)
             if(reserve.equals(lost[i]-1)){
                 arr.add(lost[i]);
             //잃어버린 번호+1
