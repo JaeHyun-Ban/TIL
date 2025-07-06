@@ -23,8 +23,8 @@ public class dfsEx {
         }
     }
     void addEdge(int i1, int i2){
-        Node n1 = new nodes[i1];
-        Node n2 = new nodes[i2];
+//        Node n1 = new nodes[i1];
+//        Node n2 = new nodes[i2];
     }
     /*
         0

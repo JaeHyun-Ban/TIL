@@ -64,9 +64,10 @@ public class pg02 {
 
             if(n[i] == 3) {
                 ans[i] = n[i];
-            } else
-                return false;
-            
+            } else {
+
+            }
+
 
         }
 
